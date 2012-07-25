@@ -24,7 +24,7 @@
 #include "ALooperRoster.h"
 #include "AString.h"
 
-#include <binder/Parcel.h>
+//#include <binder/Parcel.h>
 
 namespace android {
 
@@ -434,7 +434,7 @@ AString AMessage::debugString(int32_t indent) const {
 
     return s;
 }
-
+/*
 // static
 sp<AMessage> AMessage::FromParcel(const Parcel &parcel) {
     int32_t what = parcel.readInt32();
@@ -565,7 +565,7 @@ void AMessage::writeToParcel(Parcel *parcel) const {
             }
         }
     }
-}
+}*/
 
 size_t AMessage::countEntries() const {
     return mNumItems;

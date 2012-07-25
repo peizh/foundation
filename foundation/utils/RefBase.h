@@ -17,7 +17,7 @@
 #ifndef ANDROID_REF_BASE_H
 #define ANDROID_REF_BASE_H
 
-#include <atomic.h>
+#include <Atomic.h>
 
 #include <stdint.h>
 #include <sys/types.h>

@@ -96,14 +96,6 @@
 		E1C698B915C0256300AD27B2 /* StrongPointer.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C6985C15C0256300AD27B2 /* StrongPointer.h */; };
 		E1C698BA15C0256300AD27B2 /* SystemClock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C6985D15C0256300AD27B2 /* SystemClock.cpp */; };
 		E1C698BB15C0256300AD27B2 /* SystemClock.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C6985E15C0256300AD27B2 /* SystemClock.h */; };
-		E1C698BC15C0256300AD27B2 /* BasicHashtable_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C6986115C0256300AD27B2 /* BasicHashtable_test.cpp */; };
-		E1C698BD15C0256300AD27B2 /* BlobCache_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C6986215C0256300AD27B2 /* BlobCache_test.cpp */; };
-		E1C698BE15C0256300AD27B2 /* Looper_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C6986315C0256300AD27B2 /* Looper_test.cpp */; };
-		E1C698BF15C0256300AD27B2 /* String8_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C6986415C0256300AD27B2 /* String8_test.cpp */; };
-		E1C698C015C0256300AD27B2 /* TestHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C6986515C0256300AD27B2 /* TestHelpers.h */; };
-		E1C698C115C0256300AD27B2 /* Unicode_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C6986615C0256300AD27B2 /* Unicode_test.cpp */; };
-		E1C698C215C0256300AD27B2 /* Vector_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C6986715C0256300AD27B2 /* Vector_test.cpp */; };
-		E1C698C315C0256300AD27B2 /* ZipFileRO_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C6986815C0256300AD27B2 /* ZipFileRO_test.cpp */; };
 		E1C698C415C0256300AD27B2 /* TextOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C6986915C0256300AD27B2 /* TextOutput.cpp */; };
 		E1C698C515C0256300AD27B2 /* TextOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C6986A15C0256300AD27B2 /* TextOutput.h */; };
 		E1C698C615C0256300AD27B2 /* Thread.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C6986B15C0256300AD27B2 /* Thread.h */; };
@@ -245,15 +237,6 @@
 		E1C6985C15C0256300AD27B2 /* StrongPointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StrongPointer.h; path = ../../../../foundation/utils/StrongPointer.h; sourceTree = "<group>"; };
 		E1C6985D15C0256300AD27B2 /* SystemClock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SystemClock.cpp; path = ../../../../foundation/utils/SystemClock.cpp; sourceTree = "<group>"; };
 		E1C6985E15C0256300AD27B2 /* SystemClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SystemClock.h; path = ../../../../foundation/utils/SystemClock.h; sourceTree = "<group>"; };
-		E1C6986015C0256300AD27B2 /* Android.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
-		E1C6986115C0256300AD27B2 /* BasicHashtable_test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BasicHashtable_test.cpp; sourceTree = "<group>"; };
-		E1C6986215C0256300AD27B2 /* BlobCache_test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlobCache_test.cpp; sourceTree = "<group>"; };
-		E1C6986315C0256300AD27B2 /* Looper_test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Looper_test.cpp; sourceTree = "<group>"; };
-		E1C6986415C0256300AD27B2 /* String8_test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = String8_test.cpp; sourceTree = "<group>"; };
-		E1C6986515C0256300AD27B2 /* TestHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHelpers.h; sourceTree = "<group>"; };
-		E1C6986615C0256300AD27B2 /* Unicode_test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Unicode_test.cpp; sourceTree = "<group>"; };
-		E1C6986715C0256300AD27B2 /* Vector_test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector_test.cpp; sourceTree = "<group>"; };
-		E1C6986815C0256300AD27B2 /* ZipFileRO_test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZipFileRO_test.cpp; sourceTree = "<group>"; };
 		E1C6986915C0256300AD27B2 /* TextOutput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TextOutput.cpp; path = ../../../../foundation/utils/TextOutput.cpp; sourceTree = "<group>"; };
 		E1C6986A15C0256300AD27B2 /* TextOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextOutput.h; path = ../../../../foundation/utils/TextOutput.h; sourceTree = "<group>"; };
 		E1C6986B15C0256300AD27B2 /* Thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Thread.h; path = ../../../../foundation/utils/Thread.h; sourceTree = "<group>"; };
@@ -438,7 +421,6 @@
 				E1C6985C15C0256300AD27B2 /* StrongPointer.h */,
 				E1C6985D15C0256300AD27B2 /* SystemClock.cpp */,
 				E1C6985E15C0256300AD27B2 /* SystemClock.h */,
-				E1C6985F15C0256300AD27B2 /* tests */,
 				E1C6986915C0256300AD27B2 /* TextOutput.cpp */,
 				E1C6986A15C0256300AD27B2 /* TextOutput.h */,
 				E1C6986B15C0256300AD27B2 /* Thread.h */,
@@ -505,23 +487,6 @@
 			path = foundation;
 			sourceTree = "<group>";
 		};
-		E1C6985F15C0256300AD27B2 /* tests */ = {
-			isa = PBXGroup;
-			children = (
-				E1C6986015C0256300AD27B2 /* Android.mk */,
-				E1C6986115C0256300AD27B2 /* BasicHashtable_test.cpp */,
-				E1C6986215C0256300AD27B2 /* BlobCache_test.cpp */,
-				E1C6986315C0256300AD27B2 /* Looper_test.cpp */,
-				E1C6986415C0256300AD27B2 /* String8_test.cpp */,
-				E1C6986515C0256300AD27B2 /* TestHelpers.h */,
-				E1C6986615C0256300AD27B2 /* Unicode_test.cpp */,
-				E1C6986715C0256300AD27B2 /* Vector_test.cpp */,
-				E1C6986815C0256300AD27B2 /* ZipFileRO_test.cpp */,
-			);
-			name = tests;
-			path = ../../../../foundation/utils/tests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -580,7 +545,6 @@
 				E1C698B815C0256300AD27B2 /* StringArray.h in Headers */,
 				E1C698B915C0256300AD27B2 /* StrongPointer.h in Headers */,
 				E1C698BB15C0256300AD27B2 /* SystemClock.h in Headers */,
-				E1C698C015C0256300AD27B2 /* TestHelpers.h in Headers */,
 				E1C698C515C0256300AD27B2 /* TextOutput.h in Headers */,
 				E1C698C615C0256300AD27B2 /* Thread.h in Headers */,
 				E1C698C715C0256300AD27B2 /* ThreadDefs.h in Headers */,
@@ -728,13 +692,6 @@
 				E1C698B515C0256300AD27B2 /* String16.cpp in Sources */,
 				E1C698B715C0256300AD27B2 /* StringArray.cpp in Sources */,
 				E1C698BA15C0256300AD27B2 /* SystemClock.cpp in Sources */,
-				E1C698BC15C0256300AD27B2 /* BasicHashtable_test.cpp in Sources */,
-				E1C698BD15C0256300AD27B2 /* BlobCache_test.cpp in Sources */,
-				E1C698BE15C0256300AD27B2 /* Looper_test.cpp in Sources */,
-				E1C698BF15C0256300AD27B2 /* String8_test.cpp in Sources */,
-				E1C698C115C0256300AD27B2 /* Unicode_test.cpp in Sources */,
-				E1C698C215C0256300AD27B2 /* Vector_test.cpp in Sources */,
-				E1C698C315C0256300AD27B2 /* ZipFileRO_test.cpp in Sources */,
 				E1C698C415C0256300AD27B2 /* TextOutput.cpp in Sources */,
 				E1C698C815C0256300AD27B2 /* Threads.cpp in Sources */,
 				E1C698CA15C0256300AD27B2 /* Timers.cpp in Sources */,
@@ -830,6 +787,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -842,6 +800,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};

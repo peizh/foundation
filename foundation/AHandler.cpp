@@ -14,41 +14,20 @@
  * limitations under the License.
  */
 
-#ifndef A_BIT_READER_H_
+//#define LOG_NDEBUG 0
+#define LOG_TAG "AHandler"
+#include <utils/Log.h>
 
-#define A_BIT_READER_H_
+#include <media/stagefright/foundation/AHandler.h>
 
-#include <media/stagefright/foundation/ABase.h>
-
-#include <sys/types.h>
-#include <stdint.h>
+#include <media/stagefright/foundation/ALooperRoster.h>
 
 namespace android {
 
-struct ABitReader {
-    ABitReader(const uint8_t *data, size_t size);
+sp<ALooper> AHandler::looper() {
+    extern ALooperRoster gLooperRoster;
 
-    uint32_t getBits(size_t n);
-    void skipBits(size_t n);
-
-    void putBits(uint32_t x, size_t n);
-
-    size_t numBitsLeft() const;
-
-    const uint8_t *data() const;
-
-private:
-    const uint8_t *mData;
-    size_t mSize;
-
-    uint32_t mReservoir;  // left-aligned bits
-    size_t mNumBitsLeft;
-
-    void fillReservoir();
-
-    DISALLOW_EVIL_CONSTRUCTORS(ABitReader);
-};
+    return gLooperRoster.findLooper(id());
+}
 
 }  // namespace android
-
-#endif  // A_BIT_READER_H_

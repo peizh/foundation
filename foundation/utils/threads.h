@@ -25,14 +25,14 @@
  *
  */
 
-#include <utils/AndroidThreads.h>
+#include <AndroidThreads.h>
 
 #ifdef __cplusplus
-#include <utils/Condition.h>
-#include <utils/Errors.h>
-#include <utils/Mutex.h>
-#include <utils/RWLock.h>
-#include <utils/Thread.h>
+#include <Condition.h>
+#include <Errors.h>
+#include <Mutex.h>
+#include <RWLock.h>
+#include <Thread.h>
 #endif
 
 #endif // _LIBS_UTILS_THREADS_H

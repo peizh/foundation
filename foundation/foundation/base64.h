@@ -18,7 +18,7 @@
 
 #define BASE_64_H_
 
-#include <utils/RefBase.h>
+#include <RefBase.h>
 
 namespace android {
 

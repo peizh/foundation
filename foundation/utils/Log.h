@@ -28,6 +28,13 @@
 #ifndef _LIBS_UTILS_LOG_H
 #define _LIBS_UTILS_LOG_H
 
-#include <cutils/log.h>
+//#include <cutils/log.h>
+#define ALOGV
+#define ALOGD
+#define ALOGI
+#define ALOGW
+#define ALOGE
+#define LOG_ALWAYS_FATAL
+#define LOG_ALWAYS_FATAL_IF
 
 #endif // _LIBS_UTILS_LOG_H

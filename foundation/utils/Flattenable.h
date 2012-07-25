@@ -20,7 +20,7 @@
 
 #include <stdint.h>
 #include <sys/types.h>
-#include <utils/Errors.h>
+#include "Errors.h"
 
 namespace android {
 

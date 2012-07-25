@@ -20,8 +20,8 @@
 
 #define LOG_TAG "filemap"
 
-#include <utils/FileMap.h>
-#include <utils/Log.h>
+#include "FileMap.h"
+#include "Log.h"
 
 #include <stdio.h>
 #include <stdlib.h>

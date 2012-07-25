@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-#include <media/stagefright/foundation/AHierarchicalStateMachine.h>
+#include "AHierarchicalStateMachine.h"
 
-#include <media/stagefright/foundation/ADebug.h>
-#include <media/stagefright/foundation/AMessage.h>
-#include <utils/Vector.h>
+#include "ADebug.h"
+#include "AMessage.h"
+#include <Vector.h>
 
 namespace android {
 

@@ -22,7 +22,7 @@
 
 #include <sys/types.h>
 
-#include <utils/Compat.h>
+#include "Compat.h"
 
 #ifdef HAVE_WIN32_FILEMAP
 #include <windows.h>

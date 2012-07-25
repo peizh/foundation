@@ -18,9 +18,9 @@
 
 #include <string.h>
 
-#include <utils/Log.h>
-#include <utils/Errors.h>
-#include <utils/CallStack.h>
+#include <Log.h>
+#include <Errors.h>
+#include <CallStack.h>
 #include <corkscrew/backtrace.h>
 
 /*****************************************************************************/

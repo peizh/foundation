@@ -19,8 +19,8 @@
 
 #include <private/utils/Static.h>
 
-#include <utils/BufferedTextOutput.h>
-#include <utils/Log.h>
+#include <BufferedTextOutput.h>
+#include <Log.h>
 
 namespace android {
 

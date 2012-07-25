@@ -19,8 +19,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <utils/PropertyMap.h>
-#include <utils/Log.h>
+#include "PropertyMap.h"
+#include "Log.h"
 
 // Enables debug output for the parser.
 #define DEBUG_PARSER 0

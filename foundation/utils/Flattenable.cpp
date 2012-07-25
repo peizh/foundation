@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#include <utils/Flattenable.h>
+#include "Flattenable.h"
 
 namespace android {
 

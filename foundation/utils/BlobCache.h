@@ -19,10 +19,10 @@
 
 #include <stddef.h>
 
-#include <utils/Flattenable.h>
-#include <utils/RefBase.h>
-#include <utils/SortedVector.h>
-#include <utils/threads.h>
+#include "Flattenable.h"
+#include "RefBase.h"
+#include "SortedVector.h"
+#include "threads.h"
 
 namespace android {
 

@@ -25,12 +25,12 @@
 # include <pthread.h>
 #endif
 
-#include <utils/Condition.h>
-#include <utils/Errors.h>
-#include <utils/Mutex.h>
-#include <utils/RefBase.h>
-#include <utils/Timers.h>
-#include <utils/ThreadDefs.h>
+#include "Condition.h"
+#include "Errors.h"
+#include "Mutex.h"
+#include "RefBase.h"
+#include "Timers.h"
+#include "ThreadDefs.h"
 
 // ---------------------------------------------------------------------------
 namespace android {

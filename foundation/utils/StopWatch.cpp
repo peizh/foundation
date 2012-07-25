@@ -24,9 +24,9 @@
 #define __STDC_FORMAT_MACROS 1
 #include <inttypes.h>
 
-#include <utils/Log.h>
-#include <utils/Errors.h>
-#include <utils/StopWatch.h>
+#include "Log.h"
+#include "Errors.h"
+#include "StopWatch.h"
 
 /*****************************************************************************/
 

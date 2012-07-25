@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-#include <utils/TextOutput.h>
+#include "TextOutput.h"
 
-#include <utils/Debug.h>
+#include "Debug.h"
 
 #include <stdio.h>
 #include <stdlib.h>

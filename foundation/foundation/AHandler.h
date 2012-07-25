@@ -18,8 +18,8 @@
 
 #define A_HANDLER_H_
 
-#include <media/stagefright/foundation/ALooper.h>
-#include <utils/RefBase.h>
+#include "ALooper.h"
+#include <RefBase.h>
 
 namespace android {
 

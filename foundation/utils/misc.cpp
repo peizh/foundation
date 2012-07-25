@@ -19,8 +19,8 @@
 //
 // Miscellaneous utility functions.
 //
-#include <utils/misc.h>
-#include <utils/Log.h>
+#include <misc.h>
+#include <Log.h>
 
 #include <sys/stat.h>
 #include <string.h>

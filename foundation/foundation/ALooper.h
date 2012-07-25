@@ -18,13 +18,13 @@
 
 #define A_LOOPER_H_
 
-#include <media/stagefright/foundation/ABase.h>
-#include <media/stagefright/foundation/AString.h>
-#include <utils/Errors.h>
-#include <utils/KeyedVector.h>
-#include <utils/List.h>
-#include <utils/RefBase.h>
-#include <utils/threads.h>
+#include "ABase.h"
+#include "AString.h"
+#include <Errors.h>
+#include <KeyedVector.h>
+#include <List.h>
+#include <RefBase.h>
+#include <threads.h>
 
 namespace android {
 

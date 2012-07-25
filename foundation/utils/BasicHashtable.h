@@ -19,8 +19,8 @@
 
 #include <stdint.h>
 #include <sys/types.h>
-#include <utils/SharedBuffer.h>
-#include <utils/TypeHelpers.h>
+#include "SharedBuffer.h"
+#include "TypeHelpers.h"
 
 namespace android {
 

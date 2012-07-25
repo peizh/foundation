@@ -18,9 +18,9 @@
 
 #include <math.h>
 
-#include <utils/Log.h>
-#include <utils/BasicHashtable.h>
-#include <utils/misc.h>
+#include "Log.h"
+#include "BasicHashtable.h"
+#include "misc.h"
 
 namespace android {
 

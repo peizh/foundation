@@ -19,7 +19,7 @@
 #include <assert.h>
 #include <stdint.h>
 
-#include <utils/LinearTransform.h>
+#include <LinearTransform.h>
 
 namespace android {
 

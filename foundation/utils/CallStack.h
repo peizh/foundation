@@ -20,7 +20,7 @@
 #include <stdint.h>
 #include <sys/types.h>
 
-#include <utils/String8.h>
+#include <String8.h>
 #include <corkscrew/backtrace.h>
 
 // ---------------------------------------------------------------------------

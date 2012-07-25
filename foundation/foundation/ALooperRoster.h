@@ -18,8 +18,8 @@
 
 #define A_LOOPER_ROSTER_H_
 
-#include <media/stagefright/foundation/ALooper.h>
-#include <utils/KeyedVector.h>
+#include "ALooper.h"
+#include <KeyedVector.h>
 
 namespace android {
 

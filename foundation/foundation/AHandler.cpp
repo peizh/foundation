@@ -16,11 +16,11 @@
 
 //#define LOG_NDEBUG 0
 #define LOG_TAG "AHandler"
-#include <utils/Log.h>
+#include <Log.h>
 
-#include <media/stagefright/foundation/AHandler.h>
+#include "AHandler.h"
 
-#include <media/stagefright/foundation/ALooperRoster.h>
+#include "ALooperRoster.h"
 
 namespace android {
 

@@ -7,6 +7,7 @@
 //
 
 #import "foundationTests.h"
+#import "AMessage.h"
 
 @implementation foundationTests
 

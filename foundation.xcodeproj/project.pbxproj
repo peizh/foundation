@@ -80,7 +80,6 @@
 		E1C69A7315C20B0B00AD27B2 /* Timers.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A4615C20B0B00AD27B2 /* Timers.h */; };
 		E1C69A7515C20B1600AD27B2 /* ZipUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A7415C20B1600AD27B2 /* ZipUtils.h */; };
 		E1C69B8815C20B9200AD27B2 /* ashmem.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69B7A15C20B9200AD27B2 /* ashmem.h */; };
-		E1C69B8915C20B9200AD27B2 /* foundation.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69B7B15C20B9200AD27B2 /* foundation.h */; };
 		E1C69B8A15C20B9200AD27B2 /* Singleton.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69B7C15C20B9200AD27B2 /* Singleton.h */; };
 		E1C69B8B15C20B9200AD27B2 /* TestHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69B7D15C20B9200AD27B2 /* TestHelpers.h */; };
 		E1C69B8C15C20B9200AD27B2 /* Tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69B7E15C20B9200AD27B2 /* Tokenizer.h */; };
@@ -182,7 +181,6 @@
 		E1C69A4615C20B0B00AD27B2 /* Timers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timers.h; sourceTree = SOURCE_ROOT; };
 		E1C69A7415C20B1600AD27B2 /* ZipUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipUtils.h; sourceTree = SOURCE_ROOT; };
 		E1C69B7A15C20B9200AD27B2 /* ashmem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ashmem.h; sourceTree = SOURCE_ROOT; };
-		E1C69B7B15C20B9200AD27B2 /* foundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = foundation.h; sourceTree = "<group>"; };
 		E1C69B7C15C20B9200AD27B2 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = SOURCE_ROOT; };
 		E1C69B7D15C20B9200AD27B2 /* TestHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestHelpers.h; path = tests/TestHelpers.h; sourceTree = SOURCE_ROOT; };
 		E1C69B7E15C20B9200AD27B2 /* Tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tokenizer.h; sourceTree = SOURCE_ROOT; };
@@ -253,7 +251,6 @@
 			isa = PBXGroup;
 			children = (
 				E1C69B7A15C20B9200AD27B2 /* ashmem.h */,
-				E1C69B7B15C20B9200AD27B2 /* foundation.h */,
 				E1C69B7C15C20B9200AD27B2 /* Singleton.h */,
 				E1C69B7D15C20B9200AD27B2 /* TestHelpers.h */,
 				E1C69B7E15C20B9200AD27B2 /* Tokenizer.h */,
@@ -426,7 +423,6 @@
 				E1C69A7315C20B0B00AD27B2 /* Timers.h in Headers */,
 				E1C69A7515C20B1600AD27B2 /* ZipUtils.h in Headers */,
 				E1C69B8815C20B9200AD27B2 /* ashmem.h in Headers */,
-				E1C69B8915C20B9200AD27B2 /* foundation.h in Headers */,
 				E1C69B8A15C20B9200AD27B2 /* Singleton.h in Headers */,
 				E1C69B8B15C20B9200AD27B2 /* TestHelpers.h in Headers */,
 				E1C69B8C15C20B9200AD27B2 /* Tokenizer.h in Headers */,

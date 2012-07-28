@@ -20,6 +20,7 @@
 #ifndef _ANDROID_CONFIG_H
 #define _ANDROID_CONFIG_H
 
+#define HAVE_MAC_OS
 /*
  * ===========================================================================
  *                              !!! IMPORTANT !!!
@@ -142,7 +143,9 @@
 /*
  * Define this if have clock_gettime() and friends
  */
-//#define HAVE_POSIX_CLOCKS // disable on MAC
+#ifndef HAVE_MAC_OS
+#define HAVE_POSIX_CLOCKS
+#endif
 
 /*
  * Define this if we have pthread_cond_timedwait_monotonic() and
@@ -201,7 +204,9 @@
 /*
  * Defined if we have the gettid() system call.
  */
+#ifndef HAVE_MAC_OS
 #define HAVE_GETTID
+#endif
 
 /* 
  * Defined if we have the sched_setscheduler() call
@@ -223,7 +228,9 @@
 /* 
  * Define if we're running on *our* linux on device or emulator.
  */
-//#define HAVE_ANDROID_OS 1 // disbale on MAC
+#ifndef HAVE_MAC_OS
+#define HAVE_ANDROID_OS 1
+#endif
 
 /*
  * Define if we have Linux-style non-filesystem Unix Domain Sockets
@@ -324,7 +331,9 @@
 /*
  * Define if prctl() exists
  */
-//#define HAVE_PRCTL 1 // disable on MAC
+#ifndef HAVE_MAC_OS
+#define HAVE_PRCTL 1
+#endif
 
 /*
  * Define if writev() exists

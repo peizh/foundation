@@ -50,6 +50,10 @@ int main() {
   looper->registerHandler(handler);
   looper->start();
   message->post();
+  Vector<int> a;
+  a.push_back(1);
+  List<int> b;
+  b.clear();
 
 
   return 0;

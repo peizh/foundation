@@ -103,6 +103,7 @@
 		E1C69CAF15C3802200AD27B2 /* binder.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69CAE15C3802200AD27B2 /* binder.h */; };
 		E1C69CB215C3859900AD27B2 /* String8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C69CB015C3859800AD27B2 /* String8.cpp */; };
 		E1C69CB315C3859900AD27B2 /* String16.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C69CB115C3859900AD27B2 /* String16.cpp */; };
+		E1C69CB515C39A9F00AD27B2 /* AndroidConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69CB415C39A9F00AD27B2 /* AndroidConfig.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -215,6 +216,7 @@
 		E1C69CAE15C3802200AD27B2 /* binder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = binder.h; sourceTree = SOURCE_ROOT; };
 		E1C69CB015C3859800AD27B2 /* String8.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = String8.cpp; sourceTree = SOURCE_ROOT; };
 		E1C69CB115C3859900AD27B2 /* String16.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = String16.cpp; sourceTree = SOURCE_ROOT; };
+		E1C69CB415C39A9F00AD27B2 /* AndroidConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AndroidConfig.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +274,7 @@
 		E1C6964D15BF6D1A00AD27B2 /* foundation */ = {
 			isa = PBXGroup;
 			children = (
+				E1C69CB415C39A9F00AD27B2 /* AndroidConfig.h */,
 				E1C69CB015C3859800AD27B2 /* String8.cpp */,
 				E1C69CB115C3859900AD27B2 /* String16.cpp */,
 				E1C69CAE15C3802200AD27B2 /* binder.h */,
@@ -470,6 +473,7 @@
 				E1C69B9515C20B9200AD27B2 /* ZipFileRO.h in Headers */,
 				E1C69BA515C3671500AD27B2 /* Parcel.h in Headers */,
 				E1C69CAF15C3802200AD27B2 /* binder.h in Headers */,
+				E1C69CB515C39A9F00AD27B2 /* AndroidConfig.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -668,6 +672,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/foundation.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "foundation/foundation-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
@@ -681,6 +686,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/foundation.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "foundation/foundation-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";

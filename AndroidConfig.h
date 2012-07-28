@@ -142,7 +142,7 @@
 /*
  * Define this if have clock_gettime() and friends
  */
-#define HAVE_POSIX_CLOCKS
+//#define HAVE_POSIX_CLOCKS // disable on MAC
 
 /*
  * Define this if we have pthread_cond_timedwait_monotonic() and
@@ -223,7 +223,7 @@
 /* 
  * Define if we're running on *our* linux on device or emulator.
  */
-#define HAVE_ANDROID_OS 1
+//#define HAVE_ANDROID_OS 1 // disbale on MAC
 
 /*
  * Define if we have Linux-style non-filesystem Unix Domain Sockets
@@ -324,7 +324,7 @@
 /*
  * Define if prctl() exists
  */
-#define HAVE_PRCTL 1
+//#define HAVE_PRCTL 1 // disable on MAC
 
 /*
  * Define if writev() exists

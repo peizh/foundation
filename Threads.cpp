@@ -20,8 +20,10 @@
 #include "threads.h"
 #include "Log.h"
 
-//#include <cutils/sched_policy.h>
-//#include <cutils/properties.h>
+#ifdef HAVE_ANDROID_OS
+#include <cutils/sched_policy.h>
+#include <cutils/properties.h>
+#endif
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -30,14 +32,12 @@
 #include <assert.h>
 #include <unistd.h>
 
-#define HAVE_PTHREADS
-
 #if defined(HAVE_PTHREADS)
 # include <pthread.h>
 # include <sched.h>
 # include <sys/resource.h>
 #ifdef HAVE_ANDROID_OS
-//# include <bionic_pthread.h>
+# include <bionic_pthread.h>
 #endif
 #elif defined(HAVE_WIN32_THREADS)
 # include <windows.h>
@@ -74,7 +74,8 @@ static pthread_once_t gDoSchedulingGroupOnce = PTHREAD_ONCE_INIT;
 static bool gDoSchedulingGroup = true;
 
 static void checkDoSchedulingGroup(void) {
-#if 0
+#ifdef HAVE_ANDROID_OS
+
     char buf[PROPERTY_VALUE_MAX];
     int len = property_get("debug.sys.noschedgroups", buf, "");
     if (len > 0) {
@@ -102,15 +103,17 @@ struct thread_data_t {
         delete t;
         setpriority(PRIO_PROCESS, 0, prio);
         pthread_once(&gDoSchedulingGroupOnce, checkDoSchedulingGroup);
+#ifdef HAVE_ANDROID_OS
         if (gDoSchedulingGroup) {
             if (prio >= ANDROID_PRIORITY_BACKGROUND) {
-                //set_sched_policy(androidGetTid(), SP_BACKGROUND);
+                set_sched_policy(androidGetTid(), SP_BACKGROUND);
             } else if (prio > ANDROID_PRIORITY_AUDIO) {
-                //set_sched_policy(androidGetTid(), SP_FOREGROUND);
+                set_sched_policy(androidGetTid(), SP_FOREGROUND);
             } else {
                 // defaults to that of parent, or as set by requestPriority()
             }
         }
+#endif
         
         if (name) {
 #if defined(HAVE_PRCTL)

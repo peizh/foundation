@@ -19,8 +19,11 @@
 
 #include <stdint.h>
 #include <sys/types.h>
-//#include <system/graphics.h>
+#ifdef HAVE_ANDROID_OS
+#include <system/graphics.h>
+#else
 #define HAL_PRIORITY_URGENT_DISPLAY     (-8)
+#endif
 
 // ---------------------------------------------------------------------------
 // C API

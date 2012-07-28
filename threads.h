@@ -36,6 +36,7 @@
 #include "Thread.h"
 #endif
 
+#ifndef HAVE_ANDROID_OS
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -160,5 +161,6 @@ static __inline__ void  mutex_destroy(mutex_t*  lock)
 
 #ifdef __cplusplus
 }
+#endif
 #endif
 #endif // _LIBS_UTILS_THREADS_H

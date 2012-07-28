@@ -28,7 +28,9 @@
 #ifndef _LIBS_UTILS_LOG_H
 #define _LIBS_UTILS_LOG_H
 
-//#include <cutils/log.h>
+#ifdef HAVE_ANDROID_OS
+#include <cutils/log.h>
+#else
 #define ALOGV
 #define ALOGD
 #define ALOGI
@@ -38,5 +40,6 @@
 #define LOG_ALWAYS_FATAL_IF
 #define ALOG_ASSERT
 #define LOG_FATAL_IF
+#endif
 
 #endif // _LIBS_UTILS_LOG_H

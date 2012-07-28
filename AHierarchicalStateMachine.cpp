@@ -18,7 +18,7 @@
 
 #include "ADebug.h"
 #include "AMessage.h"
-#include <Vector.h>
+#include "Vector.h"
 
 namespace android {
 

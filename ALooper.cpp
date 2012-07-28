@@ -16,7 +16,7 @@
 
 //#define LOG_NDEBUG 0
 #define LOG_TAG "ALooper"
-#include <Log.h>
+#include "Log.h"
 
 #include <sys/time.h>
 

@@ -1316,9 +1316,9 @@ void Parcel::print(TextOutput& to, uint32_t flags) const
     to << ")";
 }
 
-#if 0
 void Parcel::releaseObjects()
 {
+#ifdef HAVE_ANDROID_OS
     const sp<ProcessState> proc(ProcessState::self());
     size_t i = mObjectsSize;
     uint8_t* const data = mData;
@@ -1329,10 +1329,12 @@ void Parcel::releaseObjects()
             = reinterpret_cast<flat_binder_object*>(data+objects[i]);
         release_object(proc, *flat, this);
     }
+#endif
 }
 
 void Parcel::acquireObjects()
 {
+#ifdef HAVE_ANDROID_OS
     const sp<ProcessState> proc(ProcessState::self());
     size_t i = mObjectsSize;
     uint8_t* const data = mData;
@@ -1343,8 +1345,8 @@ void Parcel::acquireObjects()
             = reinterpret_cast<flat_binder_object*>(data+objects[i]);
         acquire_object(proc, *flat, this);
     }
-}
 #endif
+}
 
 void Parcel::freeData()
 {

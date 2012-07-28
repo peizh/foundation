@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#include <utils/Unicode.h>
+#include "Unicode.h"
 
 #include <stddef.h>
 

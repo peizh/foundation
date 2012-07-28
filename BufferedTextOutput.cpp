@@ -23,7 +23,7 @@
 #include "Vector.h"
 #include "threads.h"
 
-#include <private/utils/Static.h>
+#include "Static.h"
 
 #include <stdio.h>
 #include <stdlib.h>

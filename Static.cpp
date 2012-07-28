@@ -17,10 +17,10 @@
 // All static variables go here, to control initialization and
 // destruction order in the library.
 
-#include <private/utils/Static.h>
+#include "Static.h"
 
-#include <BufferedTextOutput.h>
-#include <Log.h>
+#include "BufferedTextOutput.h"
+#include "Log.h"
 
 namespace android {
 

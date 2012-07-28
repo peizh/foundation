@@ -22,9 +22,9 @@
 
 #include "ABase.h"
 #include "AString.h"
-#include <List.h>
-#include <Vector.h>
-#include <threads.h>
+#include "List.h"
+#include "Vector.h"
+#include "threads.h"
 
 namespace android {
 

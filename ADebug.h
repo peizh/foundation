@@ -20,9 +20,9 @@
 
 #include <string.h>
 
-#include <ABase.h>
-#include <AString.h>
-#include <Log.h>
+#include "ABase.h"
+#include "AString.h"
+#include "Log.h"
 
 namespace android {
 

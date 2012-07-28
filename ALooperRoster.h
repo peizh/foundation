@@ -19,7 +19,7 @@
 #define A_LOOPER_ROSTER_H_
 
 #include "ALooper.h"
-#include <KeyedVector.h>
+#include "KeyedVector.h"
 
 namespace android {
 

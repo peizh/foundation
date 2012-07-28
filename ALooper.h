@@ -20,11 +20,11 @@
 
 #include "ABase.h"
 #include "AString.h"
-#include <Errors.h>
-#include <KeyedVector.h>
-#include <List.h>
-#include <RefBase.h>
-#include <threads.h>
+#include "Errors.h"
+#include "KeyedVector.h"
+#include "List.h"
+#include "RefBase.h"
+#include "threads.h"
 
 namespace android {
 

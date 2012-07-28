@@ -21,9 +21,9 @@
 #include <stdint.h>
 #include <sys/types.h>
 
-#include <Log.h>
-#include <VectorImpl.h>
-#include <TypeHelpers.h>
+#include "Log.h"
+#include "VectorImpl.h"
+#include "TypeHelpers.h"
 
 // ---------------------------------------------------------------------------
 

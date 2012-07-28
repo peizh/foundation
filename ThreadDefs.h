@@ -20,6 +20,7 @@
 #include <stdint.h>
 #include <sys/types.h>
 //#include <system/graphics.h>
+#define HAL_PRIORITY_URGENT_DISPLAY     (-8)
 
 // ---------------------------------------------------------------------------
 // C API
@@ -62,7 +63,7 @@ enum {
     ANDROID_PRIORITY_DISPLAY        =  -4,
     
     /* ui service treads might want to run at a urgent display (uncommon) */
-    ANDROID_PRIORITY_URGENT_DISPLAY =  8, //HAL_PRIORITY_URGENT_DISPLAY,
+    ANDROID_PRIORITY_URGENT_DISPLAY =  HAL_PRIORITY_URGENT_DISPLAY,
     
     /* all normal audio threads */
     ANDROID_PRIORITY_AUDIO          = -16,

@@ -21,6 +21,7 @@
 #include <sys/types.h>
 #include <time.h>
 
+#include "AndroidConfig.h"
 #if defined(HAVE_PTHREADS)
 # include <pthread.h>
 #endif

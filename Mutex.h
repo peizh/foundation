@@ -20,8 +20,8 @@
 #include <stdint.h>
 #include <sys/types.h>
 #include <time.h>
+#include "AndroidConfig.h"
 
-#define HAVE_PTHREADS
 #if defined(HAVE_PTHREADS)
 # include <pthread.h>
 #endif

@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+#include <stdio.h>
 #include "AndroidConfig.h"
 #include "String8.h"
 

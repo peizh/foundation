@@ -21,7 +21,7 @@
 #include <sys/types.h>
 
 #include <String8.h>
-#include <corkscrew/backtrace.h>
+//#include <corkscrew/backtrace.h>
 
 // ---------------------------------------------------------------------------
 
@@ -63,7 +63,7 @@ public:
 
 private:
     size_t mCount;
-    backtrace_frame_t mStack[MAX_DEPTH];
+    //backtrace_frame_t mStack[MAX_DEPTH];
 };
 
 }; // namespace android

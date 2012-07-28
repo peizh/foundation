@@ -36,5 +36,6 @@
 #define ALOGE
 #define LOG_ALWAYS_FATAL
 #define LOG_ALWAYS_FATAL_IF
+#define ALOG_ASSERT
 
 #endif // _LIBS_UTILS_LOG_H

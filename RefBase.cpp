@@ -16,13 +16,13 @@
 
 #define LOG_TAG "RefBase"
 
-#include <utils/RefBase.h>
+#include "RefBase.h"
 
-#include <utils/Atomic.h>
-#include <utils/CallStack.h>
-#include <utils/Log.h>
-#include <utils/threads.h>
-#include <utils/TextOutput.h>
+#include "Atomic.h"
+#include "CallStack.h"
+#include "Log.h"
+#include "threads.h"
+#include "TextOutput.h"
 
 #include <stdlib.h>
 #include <stdio.h>

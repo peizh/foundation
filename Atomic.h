@@ -18,5 +18,10 @@
 #define ANDROID_UTILS_ATOMIC_H
 
 //#include <cutils/atomic.h>
+#define android_atomic_inc(a) 1
+#define android_atomic_dec(a) 1
+#define android_atomic_add(a, b) 1
+#define android_atomic_or(a, b) 1
+#define android_atomic_cmpxchg(a, b, c) 1
 
 #endif // ANDROID_UTILS_ATOMIC_H

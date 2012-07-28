@@ -92,6 +92,12 @@
 		E1C69B9315C20B9200AD27B2 /* WorkQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69B8515C20B9200AD27B2 /* WorkQueue.h */; };
 		E1C69B9415C20B9200AD27B2 /* ZipFileCRO.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69B8615C20B9200AD27B2 /* ZipFileCRO.h */; };
 		E1C69B9515C20B9200AD27B2 /* ZipFileRO.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69B8715C20B9200AD27B2 /* ZipFileRO.h */; };
+		E1C69B9815C20E1000AD27B2 /* RefBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C69B9615C20E1000AD27B2 /* RefBase.cpp */; };
+		E1C69B9915C20E1000AD27B2 /* VectorImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C69B9715C20E1000AD27B2 /* VectorImpl.cpp */; };
+		E1C69B9B15C20E7300AD27B2 /* Threads.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C69B9A15C20E7300AD27B2 /* Threads.cpp */; };
+		E1C69B9D15C2112400AD27B2 /* SharedBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C69B9C15C2112400AD27B2 /* SharedBuffer.cpp */; };
+		E1C69B9F15C35C1A00AD27B2 /* TextOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C69B9E15C35C1A00AD27B2 /* TextOutput.cpp */; };
+		E1C69BA115C35C6200AD27B2 /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C69BA015C35C6200AD27B2 /* Debug.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -193,6 +199,12 @@
 		E1C69B8515C20B9200AD27B2 /* WorkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkQueue.h; sourceTree = SOURCE_ROOT; };
 		E1C69B8615C20B9200AD27B2 /* ZipFileCRO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipFileCRO.h; sourceTree = SOURCE_ROOT; };
 		E1C69B8715C20B9200AD27B2 /* ZipFileRO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipFileRO.h; sourceTree = SOURCE_ROOT; };
+		E1C69B9615C20E1000AD27B2 /* RefBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RefBase.cpp; sourceTree = SOURCE_ROOT; };
+		E1C69B9715C20E1000AD27B2 /* VectorImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VectorImpl.cpp; sourceTree = SOURCE_ROOT; };
+		E1C69B9A15C20E7300AD27B2 /* Threads.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Threads.cpp; sourceTree = SOURCE_ROOT; };
+		E1C69B9C15C2112400AD27B2 /* SharedBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SharedBuffer.cpp; sourceTree = SOURCE_ROOT; };
+		E1C69B9E15C35C1A00AD27B2 /* TextOutput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextOutput.cpp; sourceTree = SOURCE_ROOT; };
+		E1C69BA015C35C6200AD27B2 /* Debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Debug.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +262,12 @@
 		E1C6964D15BF6D1A00AD27B2 /* foundation */ = {
 			isa = PBXGroup;
 			children = (
+				E1C69BA015C35C6200AD27B2 /* Debug.cpp */,
+				E1C69B9E15C35C1A00AD27B2 /* TextOutput.cpp */,
+				E1C69B9C15C2112400AD27B2 /* SharedBuffer.cpp */,
+				E1C69B9A15C20E7300AD27B2 /* Threads.cpp */,
+				E1C69B9615C20E1000AD27B2 /* RefBase.cpp */,
+				E1C69B9715C20E1000AD27B2 /* VectorImpl.cpp */,
 				E1C69B7A15C20B9200AD27B2 /* ashmem.h */,
 				E1C69B7C15C20B9200AD27B2 /* Singleton.h */,
 				E1C69B7D15C20B9200AD27B2 /* TestHelpers.h */,
@@ -545,6 +563,12 @@
 				E1C69A1815C20AB200AD27B2 /* AMessage.cpp in Sources */,
 				E1C69A4815C20B0B00AD27B2 /* AString.cpp in Sources */,
 				E1C69A5B15C20B0B00AD27B2 /* hexdump.cpp in Sources */,
+				E1C69B9815C20E1000AD27B2 /* RefBase.cpp in Sources */,
+				E1C69B9915C20E1000AD27B2 /* VectorImpl.cpp in Sources */,
+				E1C69B9B15C20E7300AD27B2 /* Threads.cpp in Sources */,
+				E1C69B9D15C2112400AD27B2 /* SharedBuffer.cpp in Sources */,
+				E1C69B9F15C35C1A00AD27B2 /* TextOutput.cpp in Sources */,
+				E1C69BA115C35C6200AD27B2 /* Debug.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

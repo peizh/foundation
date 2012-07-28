@@ -20,10 +20,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include <utils/Log.h>
-#include <utils/Errors.h>
-#include <utils/SharedBuffer.h>
-#include <utils/VectorImpl.h>
+#include "Log.h"
+#include "Errors.h"
+#include "SharedBuffer.h"
+#include "VectorImpl.h"
 
 /*****************************************************************************/
 

@@ -17,11 +17,11 @@
 // #define LOG_NDEBUG 0
 #define LOG_TAG "libutils.threads"
 
-#include <utils/threads.h>
-#include <utils/Log.h>
+#include "threads.h"
+#include "Log.h"
 
-#include <cutils/sched_policy.h>
-#include <cutils/properties.h>
+//#include <cutils/sched_policy.h>
+//#include <cutils/properties.h>
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -29,6 +29,8 @@
 #include <errno.h>
 #include <assert.h>
 #include <unistd.h>
+
+#define HAVE_PTHREADS
 
 #if defined(HAVE_PTHREADS)
 # include <pthread.h>
@@ -72,6 +74,7 @@ static pthread_once_t gDoSchedulingGroupOnce = PTHREAD_ONCE_INIT;
 static bool gDoSchedulingGroup = true;
 
 static void checkDoSchedulingGroup(void) {
+#if 0
     char buf[PROPERTY_VALUE_MAX];
     int len = property_get("debug.sys.noschedgroups", buf, "");
     if (len > 0) {
@@ -80,6 +83,7 @@ static void checkDoSchedulingGroup(void) {
             gDoSchedulingGroup = temp == 0;
         }
     }
+#endif
 }
 
 struct thread_data_t {
@@ -100,9 +104,9 @@ struct thread_data_t {
         pthread_once(&gDoSchedulingGroupOnce, checkDoSchedulingGroup);
         if (gDoSchedulingGroup) {
             if (prio >= ANDROID_PRIORITY_BACKGROUND) {
-                set_sched_policy(androidGetTid(), SP_BACKGROUND);
+                //set_sched_policy(androidGetTid(), SP_BACKGROUND);
             } else if (prio > ANDROID_PRIORITY_AUDIO) {
-                set_sched_policy(androidGetTid(), SP_FOREGROUND);
+                //set_sched_policy(androidGetTid(), SP_FOREGROUND);
             } else {
                 // defaults to that of parent, or as set by requestPriority()
             }

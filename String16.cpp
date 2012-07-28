@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-#include <utils/String16.h>
+#include "String16.h"
 
-#include <utils/Debug.h>
-#include <utils/Log.h>
-#include <utils/Unicode.h>
-#include <utils/String8.h>
-#include <utils/TextOutput.h>
-#include <utils/threads.h>
+#include "Debug.h"
+#include "Log.h"
+#include "Unicode.h"
+#include "String8.h"
+#include "TextOutput.h"
+#include "threads.h"
 
-#include <private/utils/Static.h>
+#include "Static.h"
 
 #include <memory.h>
 #include <stdio.h>

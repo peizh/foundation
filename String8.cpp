@@ -14,16 +14,17 @@
  * limitations under the License.
  */
 
-#include <utils/String8.h>
+#include "AndroidConfig.h"
+#include "String8.h"
 
-#include <utils/Log.h>
-#include <utils/Unicode.h>
-#include <utils/SharedBuffer.h>
-#include <utils/String16.h>
-#include <utils/TextOutput.h>
-#include <utils/threads.h>
+#include "Log.h"
+#include "Unicode.h"
+#include "SharedBuffer.h"
+#include "String16.h"
+#include "TextOutput.h"
+#include "threads.h"
 
-#include <private/utils/Static.h>
+#include "Static.h"
 
 #include <ctype.h>
 

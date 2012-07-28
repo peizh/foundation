@@ -17,13 +17,11 @@
 // #define LOG_NDEBUG 0
 #define LOG_TAG "libutils.threads"
 
-#include "threads.h"
-#include "Log.h"
+#include <utils/threads.h>
+#include <utils/Log.h>
 
-#ifdef HAVE_ANDROID_OS
 #include <cutils/sched_policy.h>
 #include <cutils/properties.h>
-#endif
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -74,8 +72,6 @@ static pthread_once_t gDoSchedulingGroupOnce = PTHREAD_ONCE_INIT;
 static bool gDoSchedulingGroup = true;
 
 static void checkDoSchedulingGroup(void) {
-#ifdef HAVE_ANDROID_OS
-
     char buf[PROPERTY_VALUE_MAX];
     int len = property_get("debug.sys.noschedgroups", buf, "");
     if (len > 0) {
@@ -84,7 +80,6 @@ static void checkDoSchedulingGroup(void) {
             gDoSchedulingGroup = temp == 0;
         }
     }
-#endif
 }
 
 struct thread_data_t {
@@ -103,7 +98,6 @@ struct thread_data_t {
         delete t;
         setpriority(PRIO_PROCESS, 0, prio);
         pthread_once(&gDoSchedulingGroupOnce, checkDoSchedulingGroup);
-#ifdef HAVE_ANDROID_OS
         if (gDoSchedulingGroup) {
             if (prio >= ANDROID_PRIORITY_BACKGROUND) {
                 set_sched_policy(androidGetTid(), SP_BACKGROUND);
@@ -113,7 +107,6 @@ struct thread_data_t {
                 // defaults to that of parent, or as set by requestPriority()
             }
         }
-#endif
         
         if (name) {
 #if defined(HAVE_PRCTL)

@@ -98,6 +98,9 @@
 		E1C69B9D15C2112400AD27B2 /* SharedBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C69B9C15C2112400AD27B2 /* SharedBuffer.cpp */; };
 		E1C69B9F15C35C1A00AD27B2 /* TextOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C69B9E15C35C1A00AD27B2 /* TextOutput.cpp */; };
 		E1C69BA115C35C6200AD27B2 /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C69BA015C35C6200AD27B2 /* Debug.cpp */; };
+		E1C69BA415C3671500AD27B2 /* Parcel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C69BA215C3671500AD27B2 /* Parcel.cpp */; };
+		E1C69BA515C3671500AD27B2 /* Parcel.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69BA315C3671500AD27B2 /* Parcel.h */; };
+		E1C69CAF15C3802200AD27B2 /* binder.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69CAE15C3802200AD27B2 /* binder.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -205,6 +208,9 @@
 		E1C69B9C15C2112400AD27B2 /* SharedBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SharedBuffer.cpp; sourceTree = SOURCE_ROOT; };
 		E1C69B9E15C35C1A00AD27B2 /* TextOutput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextOutput.cpp; sourceTree = SOURCE_ROOT; };
 		E1C69BA015C35C6200AD27B2 /* Debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Debug.cpp; sourceTree = SOURCE_ROOT; };
+		E1C69BA215C3671500AD27B2 /* Parcel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Parcel.cpp; sourceTree = SOURCE_ROOT; };
+		E1C69BA315C3671500AD27B2 /* Parcel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parcel.h; sourceTree = SOURCE_ROOT; };
+		E1C69CAE15C3802200AD27B2 /* binder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = binder.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +268,9 @@
 		E1C6964D15BF6D1A00AD27B2 /* foundation */ = {
 			isa = PBXGroup;
 			children = (
+				E1C69CAE15C3802200AD27B2 /* binder.h */,
+				E1C69BA215C3671500AD27B2 /* Parcel.cpp */,
+				E1C69BA315C3671500AD27B2 /* Parcel.h */,
 				E1C69BA015C35C6200AD27B2 /* Debug.cpp */,
 				E1C69B9E15C35C1A00AD27B2 /* TextOutput.cpp */,
 				E1C69B9C15C2112400AD27B2 /* SharedBuffer.cpp */,
@@ -453,6 +462,8 @@
 				E1C69B9315C20B9200AD27B2 /* WorkQueue.h in Headers */,
 				E1C69B9415C20B9200AD27B2 /* ZipFileCRO.h in Headers */,
 				E1C69B9515C20B9200AD27B2 /* ZipFileRO.h in Headers */,
+				E1C69BA515C3671500AD27B2 /* Parcel.h in Headers */,
+				E1C69CAF15C3802200AD27B2 /* binder.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +580,7 @@
 				E1C69B9D15C2112400AD27B2 /* SharedBuffer.cpp in Sources */,
 				E1C69B9F15C35C1A00AD27B2 /* TextOutput.cpp in Sources */,
 				E1C69BA115C35C6200AD27B2 /* Debug.cpp in Sources */,
+				E1C69BA415C3671500AD27B2 /* Parcel.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

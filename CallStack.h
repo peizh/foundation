@@ -21,9 +21,7 @@
 #include <sys/types.h>
 
 #include "String8.h"
-#ifdef HAVE_ANDROID_OS
 #include <corkscrew/backtrace.h>
-#endif
 
 // ---------------------------------------------------------------------------
 
@@ -65,9 +63,7 @@ public:
 
 private:
     size_t mCount;
-#ifdef HAVE_ANDROID_OS
     backtrace_frame_t mStack[MAX_DEPTH];
-#endif
 };
 
 }; // namespace android

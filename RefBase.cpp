@@ -14,12 +14,15 @@
  * limitations under the License.
  */
 
+#include "AndroidConfig.h"
 #define LOG_TAG "RefBase"
 
 #include "RefBase.h"
 
 #include "Atomic.h"
+#if HAVE_BACKTRACE
 #include "CallStack.h"
+#endif
 #include "Log.h"
 #include "threads.h"
 #include "TextOutput.h"

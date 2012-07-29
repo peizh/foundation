@@ -19,11 +19,7 @@
 
 #include "TextOutput.h"
 #include "threads.h"
-#ifdef HAVE_ANDROID_OS
-#include <cutils/uio.h>
-#else
 #include <sys/uio.h>
-#endif
 
 // ---------------------------------------------------------------------------
 namespace android {

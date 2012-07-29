@@ -43,7 +43,6 @@
 		E1C69A4E15C20B0B00AD27B2 /* BlobCache.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A2115C20B0B00AD27B2 /* BlobCache.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69A4F15C20B0B00AD27B2 /* BufferedTextOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A2215C20B0B00AD27B2 /* BufferedTextOutput.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69A5015C20B0B00AD27B2 /* ByteOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A2315C20B0B00AD27B2 /* ByteOrder.h */; settings = {ATTRIBUTES = (); }; };
-		E1C69A5115C20B0B00AD27B2 /* CallStack.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A2415C20B0B00AD27B2 /* CallStack.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69A5215C20B0B00AD27B2 /* Compat.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A2515C20B0B00AD27B2 /* Compat.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69A5315C20B0B00AD27B2 /* Condition.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A2615C20B0B00AD27B2 /* Condition.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69A5415C20B0B00AD27B2 /* Debug.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A2715C20B0B00AD27B2 /* Debug.h */; settings = {ATTRIBUTES = (); }; };
@@ -160,7 +159,6 @@
 		E1C69A2115C20B0B00AD27B2 /* BlobCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlobCache.h; sourceTree = SOURCE_ROOT; };
 		E1C69A2215C20B0B00AD27B2 /* BufferedTextOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BufferedTextOutput.h; sourceTree = SOURCE_ROOT; };
 		E1C69A2315C20B0B00AD27B2 /* ByteOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ByteOrder.h; sourceTree = SOURCE_ROOT; };
-		E1C69A2415C20B0B00AD27B2 /* CallStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallStack.h; sourceTree = SOURCE_ROOT; };
 		E1C69A2515C20B0B00AD27B2 /* Compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Compat.h; sourceTree = SOURCE_ROOT; };
 		E1C69A2615C20B0B00AD27B2 /* Condition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Condition.h; sourceTree = SOURCE_ROOT; };
 		E1C69A2715C20B0B00AD27B2 /* Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Debug.h; sourceTree = SOURCE_ROOT; };
@@ -325,7 +323,6 @@
 				E1C69A2115C20B0B00AD27B2 /* BlobCache.h */,
 				E1C69A2215C20B0B00AD27B2 /* BufferedTextOutput.h */,
 				E1C69A2315C20B0B00AD27B2 /* ByteOrder.h */,
-				E1C69A2415C20B0B00AD27B2 /* CallStack.h */,
 				E1C69A2515C20B0B00AD27B2 /* Compat.h */,
 				E1C69A2615C20B0B00AD27B2 /* Condition.h */,
 				E1C69A2715C20B0B00AD27B2 /* Debug.h */,
@@ -438,7 +435,6 @@
 				E1C69A4E15C20B0B00AD27B2 /* BlobCache.h in Headers */,
 				E1C69A4F15C20B0B00AD27B2 /* BufferedTextOutput.h in Headers */,
 				E1C69A5015C20B0B00AD27B2 /* ByteOrder.h in Headers */,
-				E1C69A5115C20B0B00AD27B2 /* CallStack.h in Headers */,
 				E1C69A5215C20B0B00AD27B2 /* Compat.h in Headers */,
 				E1C69A5315C20B0B00AD27B2 /* Condition.h in Headers */,
 				E1C69A5415C20B0B00AD27B2 /* Debug.h in Headers */,

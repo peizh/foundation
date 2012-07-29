@@ -50,6 +50,23 @@ static int (*write_to_log)(int fd, struct iovec *vec, size_t nr) = __write_to_lo
 static pthread_mutex_t log_init_lock = PTHREAD_MUTEX_INITIALIZER;
 #endif
 
+static char filterPriToChar (android_LogPriority pri)
+{
+    switch (pri) {
+        case ANDROID_LOG_VERBOSE:       return 'V';
+        case ANDROID_LOG_DEBUG:         return 'D';
+        case ANDROID_LOG_INFO:          return 'I';
+        case ANDROID_LOG_WARN:          return 'W';
+        case ANDROID_LOG_ERROR:         return 'E';
+        case ANDROID_LOG_FATAL:         return 'F';
+        case ANDROID_LOG_SILENT:        return 'S';
+
+        case ANDROID_LOG_DEFAULT:
+        case ANDROID_LOG_UNKNOWN:
+        default:                        return '?';
+    }
+}
+
 static int __write_to_log_stderr(int fd, struct iovec *vec, size_t nr)
 {
     ssize_t ret;
@@ -63,18 +80,26 @@ static int __write_to_log_stderr(int fd, struct iovec *vec, size_t nr)
 
 int __android_log_write(int prio, const char *tag, const char *msg)
 {
-    struct iovec vec[3];
+    struct iovec vec[5];
     if (!tag)
         tag = "";
 
-    vec[0].iov_base   = (unsigned char *) &prio;
-    vec[0].iov_len    = 1;
+    char prios[3];
+    prios[0] = filterPriToChar(prio);
+    prios[1] = '|';
+    prios[2] = '\n';
+    vec[0].iov_base   = (unsigned char *) &prios[0];
+    vec[0].iov_len    = 2;
     vec[1].iov_base   = (void *) tag;
-    vec[1].iov_len    = strlen(tag) + 1;
-    vec[2].iov_base   = (void *) msg;
-    vec[2].iov_len    = strlen(msg) + 1;
+    vec[1].iov_len    = strlen(tag);
+    vec[2].iov_base   = (unsigned char *) &prios[1];
+    vec[2].iov_len    = 1;
+    vec[3].iov_base   = (void *) msg;
+    vec[3].iov_len    = strlen(msg);
+    vec[4].iov_base   = (unsigned char *) &prios[2];
+    vec[4].iov_len    = 1;
 
-    return write_to_log(0, vec, 3);
+    return write_to_log(0, vec, 5);
 }
 
 int __android_log_print(int prio, const char *tag, const char *fmt, ...)

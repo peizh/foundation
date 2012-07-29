@@ -49,6 +49,11 @@
 extern "C" {
 #endif
 
+#define LOGV ALOGV
+#define LOGD ALOGD
+#define LOGI ALOGI
+#define LOGW ALOGW
+#define LOGE ALOGE
 // ---------------------------------------------------------------------
 
 /*

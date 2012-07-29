@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E1746D3815C4F0E2000941C7 /* logd_write.c in Sources */ = {isa = PBXBuildFile; fileRef = E1746D3715C4F0E2000941C7 /* logd_write.c */; };
+		E1746D3B15C52FC2000941C7 /* foundationTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = E1746D3A15C52FC2000941C7 /* foundationTests.mm */; };
 		E1C6964C15BF6D1A00AD27B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C6964B15BF6D1A00AD27B2 /* Foundation.framework */; };
 		E1C6965A15BF6D1B00AD27B2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C6965915BF6D1B00AD27B2 /* SenTestingKit.framework */; };
-		E1C6965C15BF6D1B00AD27B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C6965B15BF6D1B00AD27B2 /* UIKit.framework */; };
 		E1C6965D15BF6D1B00AD27B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C6964B15BF6D1A00AD27B2 /* Foundation.framework */; };
 		E1C6966015BF6D1B00AD27B2 /* libfoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C6964815BF6D1A00AD27B2 /* libfoundation.a */; };
 		E1C6966615BF6D1B00AD27B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1C6966415BF6D1B00AD27B2 /* InfoPlist.strings */; };
@@ -76,7 +76,6 @@
 		E1C69CB215C3859900AD27B2 /* String8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C69CB015C3859800AD27B2 /* String8.cpp */; };
 		E1C69CB315C3859900AD27B2 /* String16.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C69CB115C3859900AD27B2 /* String16.cpp */; };
 		E1C69CB515C39A9F00AD27B2 /* AndroidConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69CB415C39A9F00AD27B2 /* AndroidConfig.h */; settings = {ATTRIBUTES = (); }; };
-		E1C69CB815C4252C00AD27B2 /* foundationTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C69CB615C4252C00AD27B2 /* foundationTests.cpp */; };
 		E1C69CBA15C4283E00AD27B2 /* Unicode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C69CB915C4283E00AD27B2 /* Unicode.cpp */; };
 		E1C69CBC15C42C6C00AD27B2 /* Static.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C69CBB15C42C6B00AD27B2 /* Static.cpp */; };
 		E1C69CBE15C42E5500AD27B2 /* BufferedTextOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C69CBD15C42E5500AD27B2 /* BufferedTextOutput.cpp */; };
@@ -95,12 +94,12 @@
 
 /* Begin PBXFileReference section */
 		E1746D3715C4F0E2000941C7 /* logd_write.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = logd_write.c; sourceTree = SOURCE_ROOT; };
+		E1746D3A15C52FC2000941C7 /* foundationTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = foundationTests.mm; sourceTree = "<group>"; };
 		E1C6964815BF6D1A00AD27B2 /* libfoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C6964B15BF6D1A00AD27B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E1C6964F15BF6D1A00AD27B2 /* foundation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "foundation-Prefix.pch"; sourceTree = "<group>"; };
 		E1C6965815BF6D1B00AD27B2 /* foundationTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = foundationTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C6965915BF6D1B00AD27B2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		E1C6965B15BF6D1B00AD27B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		E1C6966315BF6D1B00AD27B2 /* foundationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "foundationTests-Info.plist"; sourceTree = "<group>"; };
 		E1C6966515BF6D1B00AD27B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E1C699F415C20A9800AD27B2 /* AAtomizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AAtomizer.cpp; sourceTree = SOURCE_ROOT; };
@@ -165,7 +164,6 @@
 		E1C69CB015C3859800AD27B2 /* String8.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = String8.cpp; sourceTree = SOURCE_ROOT; };
 		E1C69CB115C3859900AD27B2 /* String16.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = String16.cpp; sourceTree = SOURCE_ROOT; };
 		E1C69CB415C39A9F00AD27B2 /* AndroidConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AndroidConfig.h; sourceTree = SOURCE_ROOT; };
-		E1C69CB615C4252C00AD27B2 /* foundationTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = foundationTests.cpp; sourceTree = "<group>"; };
 		E1C69CB715C4252C00AD27B2 /* foundationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = foundationTests.h; sourceTree = "<group>"; };
 		E1C69CB915C4283E00AD27B2 /* Unicode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Unicode.cpp; sourceTree = SOURCE_ROOT; };
 		E1C69CBB15C42C6B00AD27B2 /* Static.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Static.cpp; sourceTree = SOURCE_ROOT; };
@@ -187,7 +185,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1C6965A15BF6D1B00AD27B2 /* SenTestingKit.framework in Frameworks */,
-				E1C6965C15BF6D1B00AD27B2 /* UIKit.framework in Frameworks */,
 				E1C6965D15BF6D1B00AD27B2 /* Foundation.framework in Frameworks */,
 				E1C6966015BF6D1B00AD27B2 /* libfoundation.a in Frameworks */,
 			);
@@ -220,7 +217,6 @@
 			children = (
 				E1C6964B15BF6D1A00AD27B2 /* Foundation.framework */,
 				E1C6965915BF6D1B00AD27B2 /* SenTestingKit.framework */,
-				E1C6965B15BF6D1B00AD27B2 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -311,7 +307,7 @@
 		E1C6966115BF6D1B00AD27B2 /* foundationTests */ = {
 			isa = PBXGroup;
 			children = (
-				E1C69CB615C4252C00AD27B2 /* foundationTests.cpp */,
+				E1746D3A15C52FC2000941C7 /* foundationTests.mm */,
 				E1C69CB715C4252C00AD27B2 /* foundationTests.h */,
 				E1C6966215BF6D1B00AD27B2 /* Supporting Files */,
 			);
@@ -508,7 +504,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1C69CB815C4252C00AD27B2 /* foundationTests.cpp in Sources */,
+				E1746D3B15C52FC2000941C7 /* foundationTests.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,6 +611,7 @@
 				GCC_PREFIX_HEADER = "foundation/foundation-Prefix.pch";
 				INFOPLIST_FILE = "foundationTests/foundationTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = NO;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -630,6 +627,7 @@
 				GCC_PREFIX_HEADER = "foundation/foundation-Prefix.pch";
 				INFOPLIST_FILE = "foundationTests/foundationTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = NO;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;

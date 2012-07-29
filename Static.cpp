@@ -43,6 +43,7 @@ public:
 static LibUtilsFirstStatics gFirstStatics;
 int gDarwinCantLoadAllObjects = 1;
 
+#if 0
 // ------------ Text output streams
 
 Vector<int32_t> gTextBuffers;
@@ -87,5 +88,6 @@ static FdTextOutput gStderrTextOutput(STDERR_FILENO);
 TextOutput& alog(gLogTextOutput);
 TextOutput& aout(gStdoutTextOutput);
 TextOutput& aerr(gStderrTextOutput);
+#endif
 
 }   // namespace android

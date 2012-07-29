@@ -20,9 +20,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <BlobCache.h>
-#include <Errors.h>
-#include <Log.h>
+#include "BlobCache.h"
+#include "Errors.h"
+#include "Log.h"
 
 namespace android {
 

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-#include <Debug.h>
+#include "Debug.h"
 
-#include <misc.h>
+#include "misc.h"
 
 #include <stdio.h>
 #include <stdlib.h>

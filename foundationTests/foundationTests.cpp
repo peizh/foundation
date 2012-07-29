@@ -54,6 +54,8 @@ int main() {
   a.push_back(1);
   List<int> b;
   b.clear();
+  __asm__ __volatile__ ("" : : : "memory");
+
 
 
   return 0;

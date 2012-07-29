@@ -343,10 +343,9 @@ void RefBase::incStrong(const void* id) const
         return;
     }
 
-    android_atomic_add(-INITIAL_STRONG_VALUE, &refs->mStrong);
+    unusedValue(android_atomic_add(-INITIAL_STRONG_VALUE, &refs->mStrong));
     refs->mBase->onFirstRef();
 }
-
 void RefBase::decStrong(const void* id) const
 {
     weakref_impl* const refs = mRefs;
@@ -380,7 +379,7 @@ void RefBase::forceIncStrong(const void* id) const
 
     switch (c) {
     case INITIAL_STRONG_VALUE:
-        android_atomic_add(-INITIAL_STRONG_VALUE, &refs->mStrong);
+        unusedValue(android_atomic_add(-INITIAL_STRONG_VALUE, &refs->mStrong));
         // fall through...
     case 0:
         refs->mBase->onFirstRef();
@@ -494,7 +493,7 @@ bool RefBase::weakref_type::attemptIncStrong(const void* id)
 #endif
 
     if (curCount == INITIAL_STRONG_VALUE) {
-        android_atomic_add(-INITIAL_STRONG_VALUE, &impl->mStrong);
+        unusedValue(android_atomic_add(-INITIAL_STRONG_VALUE, &impl->mStrong));
         impl->mBase->onFirstRef();
     }
     

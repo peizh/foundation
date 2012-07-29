@@ -39,4 +39,7 @@
 #define android_atomic_cmpxchg(a, b, c) __atomic_cmpxchg((a), (b), (c))
 #endif
 
+template <typename T>
+void unusedValue(const T&) {}
+
 #endif // ANDROID_UTILS_ATOMIC_H

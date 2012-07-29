@@ -94,7 +94,7 @@ SharedBuffer* SharedBuffer::reset(size_t new_size) const
 }
 
 void SharedBuffer::acquire() const {
-    android_atomic_inc(&mRefs);
+    unusedValue(android_atomic_inc(&mRefs));
 }
 
 int32_t SharedBuffer::release(uint32_t flags) const

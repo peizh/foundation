@@ -19,7 +19,7 @@
 #ifdef HAVE_PTHREADS
 void*  thread_store_get( thread_store_t*  store )
 {
-    const pthread_key_t  k = store->tls;
+    //const pthread_key_t  k = store->tls;
 
     if (!store->has_tls)
         return NULL;

@@ -76,7 +76,7 @@ TextOutput& operator<<(TextOutput& to, unsigned long val)
 TextOutput& operator<<(TextOutput& to, long long val)
 {
     char buf[32];
-    sprintf(buf, "%Ld", val);
+    sprintf(buf, "%lld", val);
     to.print(buf, strlen(buf));
     return to;
 }
@@ -84,7 +84,7 @@ TextOutput& operator<<(TextOutput& to, long long val)
 TextOutput& operator<<(TextOutput& to, unsigned long long val)
 {
     char buf[32];
-    sprintf(buf, "%Lu", val);
+    sprintf(buf, "%llu", val);
     to.print(buf, strlen(buf));
     return to;
 }

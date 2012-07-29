@@ -538,7 +538,7 @@ char* String8::find_extension(void) const
 {
     const char* lastSlash;
     const char* lastDot;
-    int extLen;
+    //int extLen;
     const char* const str = mString;
 
     // only look at the filename

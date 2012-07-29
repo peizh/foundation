@@ -32,6 +32,7 @@
  * comments.
  */
 
+#define HAVE_IOS_OS 1
 /*
  * Threading model.  Choose one:
  *

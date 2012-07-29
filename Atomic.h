@@ -18,14 +18,22 @@
 #define ANDROID_UTILS_ATOMIC_H
 
 #include "AndroidConfig.h"
-//#include <cutils/atomic.h>
 #ifdef HAVE_IOS_OS
-#define android_atomic_inc(a) 1
-#define android_atomic_dec(a) 1
-#define android_atomic_add(a, b) 1
-#define android_atomic_or(a, b) 1
-#define android_atomic_cmpxchg(a, b, c) 1
+#include <libkern/OSAtomic.h>
+#define android_atomic_inc(a) OSAtomicIncrement32((int32_t*)a)
+#define android_atomic_dec(a) OSAtomicDecrement32((int32_t*)a)
+#define android_atomic_add(a, b) OSAtomicAdd32((a), (int32_t*)(b))
+#define android_atomic_and(a, b) OSAtomicAnd32((a), (int32_t*)(b))
+#define android_atomic_or(a, b) OSAtomicOr32((a), (uint32_t*)(b))
+#define android_atomic_cmpxchg(a, b, c) OSAtomicCompareAndSwap32((a), (b), (c))
 #else
+//#include <cutils/atomic.h>
+#include <sys/atomics.h>
+#define android_atomic_inc(a) __atomic_inc(a)
+#define android_atomic_dec(a) __atomic_dec(a)
+#define android_atomic_add(a, b) __atomic_add((a), (b))
+#define android_atomic_or(a, b) __atomic_or((a), (b))
+#define android_atomic_cmpxchg(a, b, c) __atomic_cmpxchg((a), (b), (c))
 #endif
 
 #endif // ANDROID_UTILS_ATOMIC_H

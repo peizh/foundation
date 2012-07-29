@@ -37,23 +37,15 @@
 		E1C69A4815C20B0B00AD27B2 /* AString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C69A1B15C20B0B00AD27B2 /* AString.cpp */; };
 		E1C69A4915C20B0B00AD27B2 /* AString.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A1C15C20B0B00AD27B2 /* AString.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69A4A15C20B0B00AD27B2 /* Atomic.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A1D15C20B0B00AD27B2 /* Atomic.h */; settings = {ATTRIBUTES = (); }; };
-		E1C69A4B15C20B0B00AD27B2 /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A1E15C20B0B00AD27B2 /* base64.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69A4F15C20B0B00AD27B2 /* BufferedTextOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A2215C20B0B00AD27B2 /* BufferedTextOutput.h */; settings = {ATTRIBUTES = (); }; };
-		E1C69A5015C20B0B00AD27B2 /* ByteOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A2315C20B0B00AD27B2 /* ByteOrder.h */; settings = {ATTRIBUTES = (); }; };
-		E1C69A5215C20B0B00AD27B2 /* Compat.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A2515C20B0B00AD27B2 /* Compat.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69A5315C20B0B00AD27B2 /* Condition.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A2615C20B0B00AD27B2 /* Condition.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69A5415C20B0B00AD27B2 /* Debug.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A2715C20B0B00AD27B2 /* Debug.h */; settings = {ATTRIBUTES = (); }; };
-		E1C69A5515C20B0B00AD27B2 /* Endian.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A2815C20B0B00AD27B2 /* Endian.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69A5615C20B0B00AD27B2 /* Errors.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A2915C20B0B00AD27B2 /* Errors.h */; settings = {ATTRIBUTES = (); }; };
-		E1C69A5815C20B0B00AD27B2 /* Flattenable.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A2B15C20B0B00AD27B2 /* Flattenable.h */; settings = {ATTRIBUTES = (); }; };
-		E1C69A5915C20B0B00AD27B2 /* Functor.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A2C15C20B0B00AD27B2 /* Functor.h */; settings = {ATTRIBUTES = (); }; };
-		E1C69A5A15C20B0B00AD27B2 /* GenerationCache.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A2D15C20B0B00AD27B2 /* GenerationCache.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69A5B15C20B0B00AD27B2 /* hexdump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C69A2E15C20B0B00AD27B2 /* hexdump.cpp */; };
 		E1C69A5C15C20B0B00AD27B2 /* hexdump.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A2F15C20B0B00AD27B2 /* hexdump.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69A5D15C20B0B00AD27B2 /* KeyedVector.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A3015C20B0B00AD27B2 /* KeyedVector.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69A5F15C20B0B00AD27B2 /* List.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A3215C20B0B00AD27B2 /* List.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69A6015C20B0B00AD27B2 /* Log.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A3315C20B0B00AD27B2 /* Log.h */; settings = {ATTRIBUTES = (); }; };
-		E1C69A6115C20B0B00AD27B2 /* Looper.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A3415C20B0B00AD27B2 /* Looper.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69A6215C20B0B00AD27B2 /* misc.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A3515C20B0B00AD27B2 /* misc.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69A6315C20B0B00AD27B2 /* Mutex.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A3615C20B0B00AD27B2 /* Mutex.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69A6515C20B0B00AD27B2 /* RefBase.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A3815C20B0B00AD27B2 /* RefBase.h */; settings = {ATTRIBUTES = (); }; };
@@ -63,17 +55,13 @@
 		E1C69A6A15C20B0B00AD27B2 /* String8.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A3D15C20B0B00AD27B2 /* String8.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69A6B15C20B0B00AD27B2 /* String16.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A3E15C20B0B00AD27B2 /* String16.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69A6D15C20B0B00AD27B2 /* StrongPointer.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A4015C20B0B00AD27B2 /* StrongPointer.h */; settings = {ATTRIBUTES = (); }; };
-		E1C69A6E15C20B0B00AD27B2 /* SystemClock.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A4115C20B0B00AD27B2 /* SystemClock.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69A6F15C20B0B00AD27B2 /* TextOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A4215C20B0B00AD27B2 /* TextOutput.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69A7015C20B0B00AD27B2 /* Thread.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A4315C20B0B00AD27B2 /* Thread.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69A7115C20B0B00AD27B2 /* ThreadDefs.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A4415C20B0B00AD27B2 /* ThreadDefs.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69A7215C20B0B00AD27B2 /* threads.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A4515C20B0B00AD27B2 /* threads.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69A7315C20B0B00AD27B2 /* Timers.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69A4615C20B0B00AD27B2 /* Timers.h */; settings = {ATTRIBUTES = (); }; };
-		E1C69B8A15C20B9200AD27B2 /* Singleton.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69B7C15C20B9200AD27B2 /* Singleton.h */; settings = {ATTRIBUTES = (); }; };
-		E1C69B8D15C20B9200AD27B2 /* Trace.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69B7F15C20B9200AD27B2 /* Trace.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69B8E15C20B9200AD27B2 /* TypeHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69B8015C20B9200AD27B2 /* TypeHelpers.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69B8F15C20B9200AD27B2 /* Unicode.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69B8115C20B9200AD27B2 /* Unicode.h */; settings = {ATTRIBUTES = (); }; };
-		E1C69B9015C20B9200AD27B2 /* UniquePtr.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69B8215C20B9200AD27B2 /* UniquePtr.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69B9115C20B9200AD27B2 /* Vector.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69B8315C20B9200AD27B2 /* Vector.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69B9215C20B9200AD27B2 /* VectorImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C69B8415C20B9200AD27B2 /* VectorImpl.h */; settings = {ATTRIBUTES = (); }; };
 		E1C69B9815C20E1000AD27B2 /* RefBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C69B9615C20E1000AD27B2 /* RefBase.cpp */; };
@@ -138,23 +126,15 @@
 		E1C69A1B15C20B0B00AD27B2 /* AString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AString.cpp; sourceTree = SOURCE_ROOT; };
 		E1C69A1C15C20B0B00AD27B2 /* AString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AString.h; sourceTree = SOURCE_ROOT; };
 		E1C69A1D15C20B0B00AD27B2 /* Atomic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Atomic.h; sourceTree = SOURCE_ROOT; };
-		E1C69A1E15C20B0B00AD27B2 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = SOURCE_ROOT; };
 		E1C69A2215C20B0B00AD27B2 /* BufferedTextOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BufferedTextOutput.h; sourceTree = SOURCE_ROOT; };
-		E1C69A2315C20B0B00AD27B2 /* ByteOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ByteOrder.h; sourceTree = SOURCE_ROOT; };
-		E1C69A2515C20B0B00AD27B2 /* Compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Compat.h; sourceTree = SOURCE_ROOT; };
 		E1C69A2615C20B0B00AD27B2 /* Condition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Condition.h; sourceTree = SOURCE_ROOT; };
 		E1C69A2715C20B0B00AD27B2 /* Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Debug.h; sourceTree = SOURCE_ROOT; };
-		E1C69A2815C20B0B00AD27B2 /* Endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Endian.h; sourceTree = SOURCE_ROOT; };
 		E1C69A2915C20B0B00AD27B2 /* Errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Errors.h; sourceTree = SOURCE_ROOT; };
-		E1C69A2B15C20B0B00AD27B2 /* Flattenable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flattenable.h; sourceTree = SOURCE_ROOT; };
-		E1C69A2C15C20B0B00AD27B2 /* Functor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Functor.h; sourceTree = SOURCE_ROOT; };
-		E1C69A2D15C20B0B00AD27B2 /* GenerationCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerationCache.h; sourceTree = SOURCE_ROOT; };
 		E1C69A2E15C20B0B00AD27B2 /* hexdump.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hexdump.cpp; sourceTree = SOURCE_ROOT; };
 		E1C69A2F15C20B0B00AD27B2 /* hexdump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hexdump.h; sourceTree = SOURCE_ROOT; };
 		E1C69A3015C20B0B00AD27B2 /* KeyedVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyedVector.h; sourceTree = SOURCE_ROOT; };
 		E1C69A3215C20B0B00AD27B2 /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = SOURCE_ROOT; };
 		E1C69A3315C20B0B00AD27B2 /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = SOURCE_ROOT; };
-		E1C69A3415C20B0B00AD27B2 /* Looper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Looper.h; sourceTree = SOURCE_ROOT; };
 		E1C69A3515C20B0B00AD27B2 /* misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = misc.h; sourceTree = SOURCE_ROOT; };
 		E1C69A3615C20B0B00AD27B2 /* Mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mutex.h; sourceTree = SOURCE_ROOT; };
 		E1C69A3815C20B0B00AD27B2 /* RefBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefBase.h; sourceTree = SOURCE_ROOT; };
@@ -164,17 +144,13 @@
 		E1C69A3D15C20B0B00AD27B2 /* String8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = String8.h; sourceTree = SOURCE_ROOT; };
 		E1C69A3E15C20B0B00AD27B2 /* String16.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = String16.h; sourceTree = SOURCE_ROOT; };
 		E1C69A4015C20B0B00AD27B2 /* StrongPointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrongPointer.h; sourceTree = SOURCE_ROOT; };
-		E1C69A4115C20B0B00AD27B2 /* SystemClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemClock.h; sourceTree = SOURCE_ROOT; };
 		E1C69A4215C20B0B00AD27B2 /* TextOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextOutput.h; sourceTree = SOURCE_ROOT; };
 		E1C69A4315C20B0B00AD27B2 /* Thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thread.h; sourceTree = SOURCE_ROOT; };
 		E1C69A4415C20B0B00AD27B2 /* ThreadDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadDefs.h; sourceTree = SOURCE_ROOT; };
 		E1C69A4515C20B0B00AD27B2 /* threads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = threads.h; sourceTree = SOURCE_ROOT; };
 		E1C69A4615C20B0B00AD27B2 /* Timers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timers.h; sourceTree = SOURCE_ROOT; };
-		E1C69B7C15C20B9200AD27B2 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = SOURCE_ROOT; };
-		E1C69B7F15C20B9200AD27B2 /* Trace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trace.h; sourceTree = SOURCE_ROOT; };
 		E1C69B8015C20B9200AD27B2 /* TypeHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeHelpers.h; sourceTree = SOURCE_ROOT; };
 		E1C69B8115C20B9200AD27B2 /* Unicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Unicode.h; sourceTree = SOURCE_ROOT; };
-		E1C69B8215C20B9200AD27B2 /* UniquePtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniquePtr.h; sourceTree = SOURCE_ROOT; };
 		E1C69B8315C20B9200AD27B2 /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = SOURCE_ROOT; };
 		E1C69B8415C20B9200AD27B2 /* VectorImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VectorImpl.h; sourceTree = SOURCE_ROOT; };
 		E1C69B9615C20E1000AD27B2 /* RefBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RefBase.cpp; sourceTree = SOURCE_ROOT; };
@@ -269,34 +245,23 @@
 				E1C69B9A15C20E7300AD27B2 /* Threads.cpp */,
 				E1C69B9615C20E1000AD27B2 /* RefBase.cpp */,
 				E1C69B9715C20E1000AD27B2 /* VectorImpl.cpp */,
-				E1C69B7C15C20B9200AD27B2 /* Singleton.h */,
-				E1C69B7F15C20B9200AD27B2 /* Trace.h */,
 				E1C69B8015C20B9200AD27B2 /* TypeHelpers.h */,
 				E1C69B8115C20B9200AD27B2 /* Unicode.h */,
-				E1C69B8215C20B9200AD27B2 /* UniquePtr.h */,
 				E1C69B8315C20B9200AD27B2 /* Vector.h */,
 				E1C69B8415C20B9200AD27B2 /* VectorImpl.h */,
 				E1C69A1A15C20B0B00AD27B2 /* AndroidThreads.h */,
 				E1C69A1B15C20B0B00AD27B2 /* AString.cpp */,
 				E1C69A1C15C20B0B00AD27B2 /* AString.h */,
 				E1C69A1D15C20B0B00AD27B2 /* Atomic.h */,
-				E1C69A1E15C20B0B00AD27B2 /* base64.h */,
 				E1C69A2215C20B0B00AD27B2 /* BufferedTextOutput.h */,
-				E1C69A2315C20B0B00AD27B2 /* ByteOrder.h */,
-				E1C69A2515C20B0B00AD27B2 /* Compat.h */,
 				E1C69A2615C20B0B00AD27B2 /* Condition.h */,
 				E1C69A2715C20B0B00AD27B2 /* Debug.h */,
-				E1C69A2815C20B0B00AD27B2 /* Endian.h */,
 				E1C69A2915C20B0B00AD27B2 /* Errors.h */,
-				E1C69A2B15C20B0B00AD27B2 /* Flattenable.h */,
-				E1C69A2C15C20B0B00AD27B2 /* Functor.h */,
-				E1C69A2D15C20B0B00AD27B2 /* GenerationCache.h */,
 				E1C69A2E15C20B0B00AD27B2 /* hexdump.cpp */,
 				E1C69A2F15C20B0B00AD27B2 /* hexdump.h */,
 				E1C69A3015C20B0B00AD27B2 /* KeyedVector.h */,
 				E1C69A3215C20B0B00AD27B2 /* List.h */,
 				E1C69A3315C20B0B00AD27B2 /* Log.h */,
-				E1C69A3415C20B0B00AD27B2 /* Looper.h */,
 				E1C69A3515C20B0B00AD27B2 /* misc.h */,
 				E1C69A3615C20B0B00AD27B2 /* Mutex.h */,
 				E1C69A3815C20B0B00AD27B2 /* RefBase.h */,
@@ -306,7 +271,6 @@
 				E1C69A3D15C20B0B00AD27B2 /* String8.h */,
 				E1C69A3E15C20B0B00AD27B2 /* String16.h */,
 				E1C69A4015C20B0B00AD27B2 /* StrongPointer.h */,
-				E1C69A4115C20B0B00AD27B2 /* SystemClock.h */,
 				E1C69A4215C20B0B00AD27B2 /* TextOutput.h */,
 				E1C69A4315C20B0B00AD27B2 /* Thread.h */,
 				E1C69A4415C20B0B00AD27B2 /* ThreadDefs.h */,
@@ -384,22 +348,14 @@
 				E1C69A4715C20B0B00AD27B2 /* AndroidThreads.h in Headers */,
 				E1C69A4915C20B0B00AD27B2 /* AString.h in Headers */,
 				E1C69A4A15C20B0B00AD27B2 /* Atomic.h in Headers */,
-				E1C69A4B15C20B0B00AD27B2 /* base64.h in Headers */,
 				E1C69A4F15C20B0B00AD27B2 /* BufferedTextOutput.h in Headers */,
-				E1C69A5015C20B0B00AD27B2 /* ByteOrder.h in Headers */,
-				E1C69A5215C20B0B00AD27B2 /* Compat.h in Headers */,
 				E1C69A5315C20B0B00AD27B2 /* Condition.h in Headers */,
 				E1C69A5415C20B0B00AD27B2 /* Debug.h in Headers */,
-				E1C69A5515C20B0B00AD27B2 /* Endian.h in Headers */,
 				E1C69A5615C20B0B00AD27B2 /* Errors.h in Headers */,
-				E1C69A5815C20B0B00AD27B2 /* Flattenable.h in Headers */,
-				E1C69A5915C20B0B00AD27B2 /* Functor.h in Headers */,
-				E1C69A5A15C20B0B00AD27B2 /* GenerationCache.h in Headers */,
 				E1C69A5C15C20B0B00AD27B2 /* hexdump.h in Headers */,
 				E1C69A5D15C20B0B00AD27B2 /* KeyedVector.h in Headers */,
 				E1C69A5F15C20B0B00AD27B2 /* List.h in Headers */,
 				E1C69A6015C20B0B00AD27B2 /* Log.h in Headers */,
-				E1C69A6115C20B0B00AD27B2 /* Looper.h in Headers */,
 				E1C69A6215C20B0B00AD27B2 /* misc.h in Headers */,
 				E1C69A6315C20B0B00AD27B2 /* Mutex.h in Headers */,
 				E1C69A6515C20B0B00AD27B2 /* RefBase.h in Headers */,
@@ -409,17 +365,13 @@
 				E1C69A6A15C20B0B00AD27B2 /* String8.h in Headers */,
 				E1C69A6B15C20B0B00AD27B2 /* String16.h in Headers */,
 				E1C69A6D15C20B0B00AD27B2 /* StrongPointer.h in Headers */,
-				E1C69A6E15C20B0B00AD27B2 /* SystemClock.h in Headers */,
 				E1C69A6F15C20B0B00AD27B2 /* TextOutput.h in Headers */,
 				E1C69A7015C20B0B00AD27B2 /* Thread.h in Headers */,
 				E1C69A7115C20B0B00AD27B2 /* ThreadDefs.h in Headers */,
 				E1C69A7215C20B0B00AD27B2 /* threads.h in Headers */,
 				E1C69A7315C20B0B00AD27B2 /* Timers.h in Headers */,
-				E1C69B8A15C20B9200AD27B2 /* Singleton.h in Headers */,
-				E1C69B8D15C20B9200AD27B2 /* Trace.h in Headers */,
 				E1C69B8E15C20B9200AD27B2 /* TypeHelpers.h in Headers */,
 				E1C69B8F15C20B9200AD27B2 /* Unicode.h in Headers */,
-				E1C69B9015C20B9200AD27B2 /* UniquePtr.h in Headers */,
 				E1C69B9115C20B9200AD27B2 /* Vector.h in Headers */,
 				E1C69B9215C20B9200AD27B2 /* VectorImpl.h in Headers */,
 				E1C69BA515C3671500AD27B2 /* Parcel.h in Headers */,

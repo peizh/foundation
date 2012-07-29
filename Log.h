@@ -484,6 +484,12 @@ typedef enum {
 int __android_log_buf_write(int bufID, int prio, const char *tag, const char *text);
 int __android_log_buf_print(int bufID, int prio, const char *tag, const char *fmt, ...);
 
+#ifdef __OPTIMIZE__
+#undef ALOGV
+#undef ALOGD
+#define ALOGV
+#define ALOGD
+#endif
 
 #ifdef __cplusplus
 }

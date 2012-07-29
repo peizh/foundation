@@ -18,6 +18,7 @@
 #include "ABitReader.h"
 #include "ALooper.h"
 #include "AHandler.h"
+#include "AHandlerReflector.h"
 #include "AString.h"
 #include "String8.h"
 #include "Vector.h"
@@ -28,21 +29,47 @@
 
 using namespace android;
 
-class MyHandler: public AHandler {
-    protected:
+class MyHandler: public RefBase {
+    public:
+        MyHandler(const sp<ALooper>& looper) : mLooper(looper) {
+        }
+
+        void sync() {
+            LOGI("demon testALooper sync in");
+            Mutex::Autolock autoLock(mLock);
+
+            mHandler = new AHandlerReflector<MyHandler>(this);
+            mLooper->registerHandler(mHandler);
+            
+            sp<AMessage> msg = new AMessage(1, mHandler->id());
+            msg->setInt32("test", 2);
+            msg->post();
+            
+            mCondition.wait(mLock);
+            LOGI("demon testALooper sync out");
+        };
+        
         virtual void onMessageReceived(const sp<AMessage> &msg) {
+            LOGI("demon testALooper msg in");
+            CHECK_EQ(msg->what(), 1);
             switch(msg->what()) {
-                case 'test': 
+                case 1: 
                     {
                         Mutex::Autolock autoLock(mLock);
-                        ALOGI("test");
-                        mCond.signal();
+                        int i;
+                        msg->findInt32("test", &i);
+                        CHECK_EQ(i, 2);
+                        mCondition.signal();
                     }
             }
+            LOGI("demon testALooper msg out");
         };
+
     private:
+        sp<ALooper> mLooper;
+        sp<AHandlerReflector<MyHandler> > mHandler;
         Mutex mLock;
-        Condition mCond;
+        Condition mCondition;
 };
 
 void testLog() {
@@ -191,6 +218,13 @@ void testParcel() {
 }
 
 void testALooper() {
+    sp<ALooper> looper = new ALooper();
+    looper->setName("demon test");
+    looper->start();
+    
+    sp<MyHandler> handler = new MyHandler(looper);
+    handler->sync();
+    LOGI("demon testALooper done");
 }
 
 #import "foundationTests.h"
@@ -218,6 +252,7 @@ void testALooper() {
     testVector();
     testString();
     testParcel();
+    testALooper();
     //STFail(@"Unit tests are not implemented yet in foundationTests");
 }
 

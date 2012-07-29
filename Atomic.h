@@ -25,7 +25,7 @@
 #define android_atomic_add(a, b) OSAtomicAdd32((a), (int32_t*)(b))
 #define android_atomic_and(a, b) OSAtomicAnd32((a), (int32_t*)(b))
 #define android_atomic_or(a, b) OSAtomicOr32((a), (uint32_t*)(b))
-#define android_atomic_cmpxchg(a, b, c) OSAtomicCompareAndSwap32((a), (b), (c))
+#define android_atomic_cmpxchg(a, b, c) !OSAtomicCompareAndSwap32((a), (b), (c))
 #else
 //#include <cutils/atomic.h>
 #include <sys/atomics.h>
